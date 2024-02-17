@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="UserCredentials.Layout">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:orientation">vertical</item>
+        <item name="android:gravity">center_horizontal</item>
+        <item name="android:paddingTop">150dp</item>
+    </style>
+    <style name="ClickableText" parent="TextAppearance.AppCompat">
+        <item name="android:clickable">true</item>
+        <item name="android:focusable">true</item>
+        <item name="android:textColor">#61B077</item>
+        <item name="android:text">@string/forgot_password</item>
+    </style>
+    <style name="ForgotPassword" parent="ClickableText">
+        <item name="android:text">@string/forgot_password</item>
+    </style>
+    <style name="LoginInstead" parent="ClickableText">
+        <item name="android:text">@string/login_instead</item>
+    </style>
+    <style name="SignUp" parent="ClickableText">
+        <item name="android:text">@string/sign_up_instead</item>
+    </style>
+    <style name="UserCredentials.Title" parent="TextAppearance.AppCompat">
+        <item name="android:textSize">40sp</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+    <style name="UserCredentials" parent="TextAppearance.AppCompat">
+        <item name="android:ems">10</item>
+    </style>
+    <style name="Email" parent="UserCredentials">
+        <item name="android:inputType">textEmailAddress</item>
+        <item name="android:hint">@string/email_hint</item>
+    </style>
+    <style name="Username" parent="UserCredentials">
+        <item name="android:inputType">text</item>
+        <item name="android:hint">@string/username_hint</item>
+    </style>
+    <style name="Password" parent="UserCredentials">
+        <item name="android:inputType">textPassword</item>
+        <item name="android:hint">@string/password_hint</item>
+    </style>
+    <style name="ConfirmPassword" parent="UserCredentials">
+        <item name="android:inputType">textPassword</item>
+        <item name="android:hint">@string/confirm_password_hint</item>
+    </style>
+    <style name="UserCredentials.Button">
+        <item name="android:layout_width">130dp</item>
+        <item name="android:layout_height">53dp</item>
+        <item name="android:background">#61B077</item>
+    </style>
+</resources>

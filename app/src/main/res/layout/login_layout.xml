@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/UserCredentials.Layout">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/login"
+        style="@style/UserCredentials.Title"
+        android:layout_marginBottom="@dimen/UserCredentialsGutterSize"/>
+
+    <EditText
+        android:id="@+id/username"
+        android:layout_width="320dp"
+        android:layout_height="wrap_content"
+        style="@style/Username"
+        android:autofillHints="username" />
+
+    <EditText
+        android:id="@+id/password"
+        android:layout_width="320dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/UserCredentialsGutterSize"
+        style="@style/Password"
+        android:autofillHints="password"/>
+
+    <TextView
+        android:id="@+id/forgot_password"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/UserCredentialsGutterSize"
+        style="@style/ForgotPassword" />
+
+    <TextView
+        android:id="@+id/sign_up_instead"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/UserCredentialsGutterSize"
+        style="@style/SignUp" />
+
+    <Button
+        android:id="@+id/login_button"
+        style="@style/UserCredentials.Button"
+        android:layout_marginTop="@dimen/UserCredentialsGutterSize"
+        android:text="@string/sign_in_button" />
+</LinearLayout>

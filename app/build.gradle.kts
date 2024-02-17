@@ -38,6 +38,7 @@ android {
         jvmTarget = "1.8"
     }
     buildFeatures {
+        viewBinding = true
         compose = true
     }
     composeOptions {
@@ -71,4 +72,11 @@ dependencies {
     implementation ("io.realm.kotlin:library-base:1.11.0")
     implementation ("io.realm.kotlin:library-sync:1.11.0")// If using Device Sync
     implementation ("org.jetbrains.kotlinx:kotlinx-coroutines-core:1.7.1") // If using coroutines with the SDK
+
+    val fragment_version = "1.6.2"
+    // Kotlin
+    implementation("androidx.fragment:fragment-ktx:$fragment_version")
+    // Testing Fragments in Isolation
+    debugImplementation("androidx.fragment:fragment-testing:$fragment_version")
+
 }
